@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &134928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 409688}
+  - component: {fileID: 11480660}
+  m_Layer: 0
+  m_Name: CreatureFactory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &409688
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134928}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11480660
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aca40d39985f540d680a0dd402aa6790, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heads:
+  - sprite: {fileID: 21300000, guid: 8b9c28410ad16b446ae1aadd8fb29366, type: 3}
+    demand: 
+    consumption: 0
+    madness: 0
+    type: 0
+  - sprite: {fileID: 21300000, guid: ca138b29eb860ad40bf32956bec01855, type: 3}
+    demand: 6d616e6469626c6573
+    consumption: 2
+    madness: 2
+    type: 0
+  - sprite: {fileID: 21300000, guid: 846d43c0f2553dc4391b38a319e92fc9, type: 3}
+    demand: 6265616b
+    consumption: 0
+    madness: 1
+    type: 0
+  bodies:
+  - sprite: {fileID: 21300000, guid: cefcd37176054e742a44cc658ca155aa, type: 3}
+    demand: 
+    consumption: 0
+    madness: 0
+    type: 1
+  - sprite: {fileID: 21300000, guid: 7717e92f7ba9ce041a6b0fcfb7c7bbaf, type: 3}
+    demand: 737069646572
+    consumption: 0
+    madness: 2
+    type: 1
+  - sprite: {fileID: 21300000, guid: b988fad63f785f440bc326630f21f7f3, type: 3}
+    demand: 77696e6773
+    consumption: 0
+    madness: 1
+    type: 1
+  tails:
+  - sprite: {fileID: 21300000, guid: a244331e32b4d634a94827b2018299ab, type: 3}
+    demand: 
+    consumption: 0
+    madness: 0
+    type: 2
+  - sprite: {fileID: 21300000, guid: b3cfa509413e3bb46a2a8ae1fd37f1ef, type: 3}
+    demand: 736e616b65
+    consumption: 1
+    madness: 1
+    type: 2
+  - sprite: {fileID: 21300000, guid: 678d5db0f4efff943adb800377292092, type: 3}
+    demand: 7261696e626f7773
+    consumption: 0
+    madness: 2
+    type: 2
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: bodies.Array.data[2].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b988fad63f785f440bc326630f21f7f3,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: heads.Array.data[2].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 846d43c0f2553dc4391b38a319e92fc9,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: tails.Array.data[2].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 678d5db0f4efff943adb800377292092,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: tails.Array.data[2].demand
+      value: rainbows
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 134928}
+  m_IsPrefabParent: 1
